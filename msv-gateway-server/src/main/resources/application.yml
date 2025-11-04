@@ -1,0 +1,16 @@
+spring:
+  cloud:
+      gateway:
+        routes:
+        - id: msv-products
+          uri: lb://msv-products
+          predicates:
+          - Path=/api/products/**
+          filters:
+          - StripPrefix=0
+        - id: msv-items
+          uri: lb://msv-items
+          predicates:
+          - Path=/api/items/**
+          filters:
+          - StripPrefix=0
