@@ -1,4 +1,4 @@
-package com.guillermo.springcloud.app.gateway.msv_gateway_server;
+package com.guillermo.springcloud.app.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
